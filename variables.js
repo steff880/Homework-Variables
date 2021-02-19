@@ -22,20 +22,20 @@ console.log(otherNumber);
 // If we try to do the same with let, it would not work and will result in "ReferenceError"
 // If we do the same with const, the code will not run
 
-// myNumber = 2;
+myNumber = 2;
 
-// let myOtherNumber = myNumber - 1;
+let myOtherNumber = myNumber - 1;
 
-// let myNumber;
-// console.log(myOtherNumber);
+let myNumber;
+console.log(myOtherNumber);
 
 // Same thing but with const
 
-// _number = 3;
+_number = 3;
 
-// const myNum = _number + 4;
-// const _number;
-// console.log(myNum);
+const myNum = _number + 4;
+const _number;
+console.log(myNum);
 
 // We can declare a variable with let and give it a value later but can not do this with const
 // So it is better to use let in this case
@@ -55,19 +55,19 @@ function greet() {
 greet();
 
 // const variables must be assigned a value when they are declared
-// function sayHi() {
-//     const differentName;
+function sayHi() {
+    const differentName;
 
-//     if (true) {
-//         differentName = "Dave";
-//         console.log("Hi " + differentName);
-//     } else {
-//         differentName = "Jake";
-//         console.log("Hi " + differentName);
-//     }
-// }
+    if (true) {
+        differentName = "Dave";
+        console.log("Hi " + differentName);
+    } else {
+        differentName = "Jake";
+        console.log("Hi " + differentName);
+    }
+}
 
-// sayHi();
+sayHi();
 
 // Also we can change the value of let but can not with const
 
